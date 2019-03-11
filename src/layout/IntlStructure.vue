@@ -23,6 +23,9 @@
 
     <main-section>
       <router-view />
+      <intl-footer>
+        <footer-content />
+      </intl-footer>
     </main-section>
   </div>
 </template>
@@ -31,8 +34,10 @@
 import IntlNavbar from './IntlNavbar'
 import IntlSidebar from './IntlSidebar'
 import SidebarContent from '../components/SidebarContent'
+import FooterContent from '../components/FooterContent'
 import MainSection from './MainSection'
 import NavbarContent from '../components/NavbarContent'
+import IntlFooter from './IntlFooter'
 
 export default {
 
@@ -40,8 +45,10 @@ export default {
   components: {
     IntlNavbar,
     IntlSidebar,
+    IntlFooter,
     SidebarContent,
     NavbarContent,
+    FooterContent,
     MainSection
   },
 

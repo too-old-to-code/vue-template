@@ -18,6 +18,7 @@
   left: 0
   padding-bottom: $navbar-height - 4px
   transition: left $animation-fast
+  z-index: 20
 
   .sidebar-spacer
     width: 100%
@@ -39,7 +40,7 @@
 
 .sidebar-size-toggle
   position: absolute
-  bottom: 10px
+  bottom: 0px
   right: 0px
   width: $sidebar-icon-width
   height: $sidebar-icon-width

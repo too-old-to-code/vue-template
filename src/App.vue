@@ -13,6 +13,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
 #app {
   height: 100%;
 }

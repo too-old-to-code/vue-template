@@ -3,18 +3,23 @@
     <div class="middle">
       <div class="inner">
         <div class="login-logo">
-          <div></div>
+          <div :class="{'logged-in': $store.state.isLoggedIn}"></div>
         </div>
         <input type="text" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
-        <Link to="/signup" class="login-page-link"><small>I need to create an account</small></Link>
-        <router-link to="/main">Home</router-link>
+        <br>
+        <button @click="login">Login</button>
+        <router-link to="/signup" class="login-page-link">
+          <small>I need to create an account</small>
+        </router-link>
+        <router-link to="/main">Dashboard</router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
 
   name: 'login-page',
@@ -23,6 +28,9 @@ export default {
     return {
 
     }
+  },
+  methods: {
+    ...mapActions(['login'])
   }
 }
 </script>
@@ -53,6 +61,7 @@ export default {
       div
         flex: 1
 
+
 input
   &[name="email"], &[name="password"]
     box-sizing: border-box
@@ -77,6 +86,11 @@ input
     border-radius: 50%
     width: 75px
     height: 75px
+    overflow: hidden
+    background-color: red
+
+    &.logged-in
+      background-color: green
 
 .login-page-link
   text-decoration: none
