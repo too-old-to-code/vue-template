@@ -23,11 +23,10 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-div > div {
-  width: 100%;
-  height: 150px;
-  margin: 10px;
-  background-color: beige;
-}
+<style lang="sass" scoped>
+div > div
+  width: 100%
+  height: 150px
+  margin: 10px
+  background-color: beige
 </style>
