@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="has-navbar-fixed-top">
+  <div id="app" class="has-navbar-fixed-top has-text-light">
     <router-view/>
   </div>
 </template>

@@ -1,3 +1,13 @@
-@import "../node_modules/bulma/bulma.sass";
 
-$navbar-height: 52px;
+// $navbar-height: 52px;
+$navbar-breakpoint: 10000px;
+// $navbar-burger-color: orange;
+$navbar-item-color: white;
+$navbar-item-hover-color: white;
+$navbar-item-hover-color: $navbar-item-color;
+$navbar-tab-active-color: white;
+$navbar-dropdown-item-active-color: white;
+$navbar-item-active-color: white;
+$navbar-burger-color: white;
+
+@import "../node_modules/bulma/bulma.sass";

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-content">
+  <div class="footer-content has-background-grey-dark has-text-light">
     <span>Info</span>
     <span>Copyright</span>
     <span>Social media</span>

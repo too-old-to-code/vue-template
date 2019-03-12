@@ -36,7 +36,6 @@ export default {
 
 .name-icon-pair
   display: flex
-  background-color: $primary-bg-color
 
   &:hover
     background-color: $primary-selected-bg-color

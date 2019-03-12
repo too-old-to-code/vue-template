@@ -1,9 +1,7 @@
 <template>
-  <div class="sidebar-wrapper">
+  <div class="sidebar-wrapper has-background-dark">
     <div class="sidebar-spacer"></div>
     <aside class="intl-sidebar">
-
-      <div class="sidebar-spacer"></div>
       <slot />
     </aside>
   </div>
@@ -28,12 +26,11 @@
 
 
   .intl-sidebar
-    background-color: $primary-bg-color
     width: 100%
     height: 100%
     overflow-y: scroll
     box-sizing: border-box
-    color: $primary-text-color
+    // color: $primary-text-color
 
 .mini .sidebar-wrapper
   left: $sidebar-width * -1 + $sidebar-icon-width

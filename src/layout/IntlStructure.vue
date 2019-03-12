@@ -5,7 +5,7 @@
   >
     <intl-navbar>
       <div class="navbar-brand">
-        <div class="navbar-item webcom-logo" :class="{'is-visible': !isMiniSidebar}">
+        <div class="navbar-item webcom-logo is-flex-desktop" :class="{'is-visible': !isMiniSidebar}">
           <img src="../../public/logo.png" />
         </div>
         <a
@@ -92,11 +92,8 @@ export default {
   min-width: 50px;
 }
 
-.navbar-item, .navbar-burger {
-  color: $primary-text-color;
-}
-
 .webcom-logo {
+  display: none;
   background-color: $secondary-bg-color;
   width: $sidebar-icon-width;
   transition: width $animation-fast;
