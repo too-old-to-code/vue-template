@@ -5,6 +5,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
 
@@ -18,25 +19,30 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-@import ../../sass/_variables.sass
+<style lang="scss" scoped>
+@import '../../sass/_variables.scss';
 
-.sidebar-item-name
-  flex: 1
-  text-align: right
-  line-height: $sidebar-item-height
-  font-size: .9em
+.sidebar-item-name {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+  line-height: $sidebar-item-height;
+  font-size: .9em;
+}
 
-.sidebar-item-icon
-  margin-left: 0
-  width: $sidebar-icon-width
-  height: $sidebar-item-height
-  line-height: $sidebar-item-height
-  text-align: center
+.sidebar-item-icon {
+  margin-left: 0;
+  width: $sidebar-icon-width;
+  height: $sidebar-item-height;
+  line-height: $sidebar-item-height;
+  text-align: center;
+}
 
-.name-icon-pair
-  display: flex
+.name-icon-pair {
+  display: flex;
 
-  &:hover
-    background-color: $primary-selected-bg-color
+  &:hover {
+    background-color: $primary-selected-bg-color;
+  }
+}
 </style>

@@ -1,13 +1,66 @@
 <template>
   <div>
-    <sidebar-icon-item-pair
+    <aside class="menu is-size-4">
+      <p class="menu-label">
+        General
+      </p>
+      <ul class="menu-list">
+        <li @click="items[0].action">
+          <sidebar-icon-item-pair>
+            <template v-slot:name>{{items[0].name}}</template>
+            <template v-slot:icon>{{items[0].icon}}</template>
+          </sidebar-icon-item-pair>
+        </li>
+        <li @click="items[1].action">
+          <sidebar-icon-item-pair>
+            <template v-slot:name>{{items[1].name}}</template>
+            <template v-slot:icon>{{items[1].icon}}</template>
+          </sidebar-icon-item-pair>
+        </li>
+      </ul>
+      <p class="menu-label">
+        Administration
+      </p>
+      <ul class="menu-list">
+        <li @click="items[2].action">
+          <sidebar-icon-item-pair>
+            <template v-slot:name>{{items[2].name}}</template>
+            <template v-slot:icon>{{items[2].icon}}</template>
+          </sidebar-icon-item-pair>
+        </li>
+      </ul>
+      <p class="menu-label">
+        My Products
+      </p>
+      <ul class="menu-list">
+        <li @click="items[2].action">
+          <sidebar-icon-item-pair>
+            <template v-slot:name>Reporting</template>
+            <template v-slot:icon>{{items[2].icon}}</template>
+          </sidebar-icon-item-pair>
+        </li>
+        <li @click="items[2].action">
+          <sidebar-icon-item-pair>
+            <template v-slot:name>Websites</template>
+            <template v-slot:icon>{{items[2].icon}}</template>
+          </sidebar-icon-item-pair>
+        </li>
+        <li @click="items[2].action">
+          <sidebar-icon-item-pair>
+            <template v-slot:name>Emails</template>
+            <template v-slot:icon>{{items[2].icon}}</template>
+          </sidebar-icon-item-pair>
+        </li>
+      </ul>
+</aside>
+    <!-- <sidebar-icon-item-pair
       v-for="item in items"
       :key="item.name"
       @click.native="item.action"
     >
       <template v-slot:name>{{item.name}}</template>
       <template v-slot:icon>{{item.icon}}</template>
-    </sidebar-icon-item-pair>
+    </sidebar-icon-item-pair> -->
 
   </div>
 </template>
