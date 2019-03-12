@@ -4,12 +4,26 @@
     :class="{ 'sidebar-closed': !isSidebarVisible, 'mini': isMiniSidebar }"
   >
     <intl-navbar>
-      <span
-        class="sidebar-toggle-button"
-        @click="handleSidebarVisibilityChange"
-      >
-        ☰
-      </span>
+      <div class="navbar-brand">
+        <div class="navbar-item webcom-logo" :class="{'is-visible': !isMiniSidebar}">
+          <img src="../../public/logo.png" />
+        </div>
+        <a
+          role="button"
+          class="navbar-burger"
+          :class="{ 'is-active': isSidebarVisible }"
+          aria-label="menu"
+          aria-expanded="false"
+          @click="handleSidebarVisibilityChange"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-item is-tab">
+          user
+        </div>
+      </div>
       <navbar-content />
     </intl-navbar>
 
@@ -70,13 +84,31 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-@import ../../sass/_variables.sass
+<style lang="scss" scoped>
+@import '../../sass/_variables.scss';
 
-.sidebar-toggle-button
-  display: flex
-  align-items: center
-  justify-content: center
-  font-size: 1.5em
-  margin-left: 10px
+.navbar-brand, .navbar-burger {
+  min-height: $navbar-height;
+  min-width: 50px;
+}
+
+.navbar-item, .navbar-burger {
+  color: $primary-text-color;
+}
+
+.webcom-logo {
+  background-color: $secondary-bg-color;
+  width: $sidebar-icon-width;
+  transition: width $animation-fast;
+
+  &.is-visible {
+    width: $sidebar-width;
+
+    img {
+      max-height: 2em;
+      margin: auto;
+    }
+  }
+}
+
 </style>

@@ -1,15 +1,5 @@
 <template>
-  <div :style="{width: '100%', display: 'flex', justifyContent: 'space-between'}">
-    <div class="navbar-items-left">
-      <div class="navbar-item">hello</div>
-      <div class="navbar-item">hello</div>
-      <div class="navbar-item">hello</div>
-    </div>
-    <div class="navbar-items-right">
-      <div class="navbar-item">hello</div>
-      <div class="navbar-item">hello</div>
-      <div class="navbar-item">hello</div>
-    </div>
+  <div>
   </div>
 </template>
 

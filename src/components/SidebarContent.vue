@@ -24,19 +24,19 @@ export default {
     return {
       items: [
         {
-          name: 'Save',
+          name: 'Dashboard',
           icon: '\uD83D\uDCBE',
           route: '/',
           action: this.save
         },
         {
-          name: 'Edit',
+          name: 'Business Details',
           icon: '\u270E',
           route: '/',
           action: this.edit
         },
         {
-          name: 'Logout',
+          name: 'Modifications',
           icon: '\u2421',
           route: '/',
           action: this.logout

@@ -1,11 +1,26 @@
-<template>
+<!-- <template>
   <nav class="intl-navbar">
+    <slot />
+  </nav>
+</template>
+ -->
+<template>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+
     <slot />
   </nav>
 </template>
 
 <style lang="sass" scoped>
 @import ../../sass/_variables.sass
+
+.navbar
+  background-color: $primary-bg-color
+  height: $navbar-height
+
+.navbar-burger
+  margin-left: inherit
+  margin-right: auto
 
 .intl-navbar
   height: $navbar-height

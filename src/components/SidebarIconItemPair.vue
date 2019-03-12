@@ -1,5 +1,5 @@
 <template>
-  <div :style="{display: 'flex'}">
+  <div class="name-icon-pair">
     <span class="sidebar-item-name"><slot name="name" /></span>
     <span class="sidebar-item-icon"><slot name="icon" /></span>
   </div>
@@ -23,19 +23,21 @@ export default {
 
 .sidebar-item-name
   flex: 1
-  margin-top: 10px
-  margin-right: 10px
-  padding-right: 10px
-  background-color: #ececec
   text-align: right
-  line-height: $sidebar-icon-width
+  line-height: $sidebar-item-height
+  font-size: .9em
 
 .sidebar-item-icon
-  margin-top: 10px
   margin-left: 0
-  background-color: #ececec
   width: $sidebar-icon-width
-  height: $sidebar-icon-width
-  line-height: $sidebar-icon-width
+  height: $sidebar-item-height
+  line-height: $sidebar-item-height
   text-align: center
+
+.name-icon-pair
+  display: flex
+  background-color: $primary-bg-color
+
+  &:hover
+    background-color: $primary-selected-bg-color
 </style>

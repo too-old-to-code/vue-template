@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="has-navbar-fixed-top">
     <router-view/>
   </div>
 </template>
@@ -17,4 +17,14 @@ body {
 #app {
   height: 100%;
 }
+</style>
+<style lang="sass">
+  @import ../sass/mystyles.scss
+  @import ../sass/_variables.sass
+
+  html
+    font-size: $root-font-size
+
+    body
+      font-size: 1.6em
 </style>

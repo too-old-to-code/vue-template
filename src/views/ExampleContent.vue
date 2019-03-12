@@ -27,6 +27,6 @@ export default {
 div > div
   width: 100%
   height: 150px
-  margin: 10px
+  margin-top: 10px
   background-color: beige
 </style>

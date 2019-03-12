@@ -2,6 +2,8 @@
   <div class="sidebar-wrapper">
     <div class="sidebar-spacer"></div>
     <aside class="intl-sidebar">
+
+      <div class="sidebar-spacer"></div>
       <slot />
     </aside>
   </div>
@@ -22,7 +24,7 @@
 
   .sidebar-spacer
     width: 100%
-    margin-top: $navbar-height - 4px
+    margin-top: $navbar-height
 
 
   .intl-sidebar
@@ -31,6 +33,7 @@
     height: 100%
     overflow-y: scroll
     box-sizing: border-box
+    color: $primary-text-color
 
 .mini .sidebar-wrapper
   left: $sidebar-width * -1 + $sidebar-icon-width

@@ -3,7 +3,7 @@
 //     loaderOptions: {
 //       sass: {
 //         data: `
-//           @import @/sass/_variables.sass
+//           @import @/scss/_variables.scss
 //         `
 //       }
 //     }
